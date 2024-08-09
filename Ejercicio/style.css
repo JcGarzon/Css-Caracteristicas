@@ -1,48 +1,114 @@
-.titulo{
+body {
+    background-color: whitesmoke; 
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.titulo {
     background-color: black;
     color: white;
     width: auto;
     height: auto;
     text-align: center;
-    z-index: 8;
 }
-.equipo
-{
+
+.titulo h2 {
+    display: none;
+}
+
+.equipo {
     text-align: center;
 }
 
-.equipo2
-{
-    text-align: center;
-}
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  .equipo2{
+.equipo2 {
     display: none;
-  }
-@media(max-width: 500px){
-    .titulo{
+    text-align: center;
+}
+
+.img-2 {
+    display: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.trofeos24 {
+    text-align: center;
+}
+
+.trofeos24 table {
+    margin: 0 auto; /* Corregido: Centra la tabla */
+    border-collapse: collapse; /* Corregido: Quita el espacio entre celdas */
+}
+
+.trofeos24 th, .trofeos24 td {
+    padding: 10px 20px;
+}
+
+.trofeos19 {
+    text-align: center;
+    display: none;
+}
+
+.trofeos19 table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.trofeos19 th, .trofeos19 td {
+    padding: 10px 20px;
+}
+
+@media (max-width: 500px) {
+    .titulo {
         background-color: red;
         width: auto;
         height: auto;
         text-align: center;
+    }
+
+    .titulo h3 {
+        display: none;
+    }
+
+    .titulo h2 {
+        display: initial;
+    }
+
+    .equipo2 {
+        display: inline;
         
     }
-    img{
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7SdP2Mmx0nFWyUEwGXdAuLnZyZkZY4PGtQ&s";
+
+    .equipo {
+        display: none;
     }
 
-    .equipo2{
-        display: initial;
-      }
-    .equipo{
+    .img-desktop {
         display: none;
-      }
+    }
 
+    .img-2 {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .trofeos19 {
+        display: inline;
+    }
+
+    .trofeos24 {
+        display: none;
+    }
 }
