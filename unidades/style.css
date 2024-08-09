@@ -1,0 +1,13 @@
+.primera-clase{
+    width: 200px;
+    height: 200px;
+    background: plum;
+}
+p{
+    font-size: 2rem;
+}
+.segunda{
+    width: 100vm;
+    height: 400px;
+    background: greenyellow;
+}
