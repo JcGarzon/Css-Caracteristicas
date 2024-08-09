@@ -1,0 +1,14 @@
+.UAO{
+    color: darkcyan;
+    width: 100px;
+    height: 100px;
+}
+#uaoid{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+a[href="https://twitter.com/G2esports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"]{
+    color: red;
+}

@@ -1,0 +1,12 @@
+div{
+    background: black;
+    width: 400px;
+    height: 300px;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+.text2{
+    background-color: rgb(165, 196, 185);
+}
