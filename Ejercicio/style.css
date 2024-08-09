@@ -1,114 +1,191 @@
 body {
-    background-color: whitesmoke; 
+    background-color: black; 
     margin: 0;
     padding: 0;
-    z-index: 1;
-}
-
-.titulo {
-    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
     color: white;
-    width: auto;
-    height: auto;
-    text-align: center;
 }
 
-.titulo h2 {
+.tablet{
     display: none;
 }
-
-.equipo {
+.celu{
+    display: none;
+}
+.titulo {
+    background-color: rgb(21, 37, 37);
+    color: white;
+    padding: 10px 0;
     text-align: center;
+    border-bottom: 2px solid dimgray;
+}
+
+.equipo, .equipo2, .equipo3 {
+    text-align: center;
+    background-color: rgb(125, 102, 102);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.equipo a, .equipo2 a, .equipo3 a {
+    color: rgb(105, 33, 20);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.equipo a:hover, .equipo2 a:hover, .equipo3 a:hover {
+    text-decoration: underline;
+}
+
+.equipo2 {
+    display: none; 
+}
+
+.equipo3 {
+    display: none; 
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.equipo2 {
-    display: none;
-    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
 .img-2 {
+    display: none; 
+}
+
+.img-3{
     display: none;
 }
 
 table, th, td {
-    border: 1px solid black;
-}
-
-.trofeos24 {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 10px 20px;
     text-align: center;
 }
 
-.trofeos24 table {
-    margin: 0 auto; /* Corregido: Centra la tabla */
-    border-collapse: collapse; /* Corregido: Quita el espacio entre celdas */
-}
-
-.trofeos24 th, .trofeos24 td {
-    padding: 10px 20px;
+table {
+    margin: 20px auto;
+    background-color: rgb(125, 102, 102);
+    border-radius: 10px;
 }
 
 .trofeos19 {
-    text-align: center;
     display: none;
+    text-align: center;
+    
 }
 
-.trofeos19 table {
-    margin: 0 auto;
-    border-collapse: collapse;
+.trofeos24{
+    text-align: center;
 }
 
-.trofeos19 th, .trofeos19 td {
-    padding: 10px 20px;
+.trofeos21{
+    display: none;
+    text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .titulo {
-        background-color: red;
-        width: auto;
-        height: auto;
-        text-align: center;
+        background-color: gray;
     }
 
-    .titulo h3 {
+    .pc{
+
+        display: none;
+
+    }
+    .tablet{
+        display: block;
+    }
+    .celu{
         display: none;
     }
 
-    .titulo h2 {
-        display: initial;
+    .equipo {
+        display: none; 
     }
 
     .equipo2 {
-        display: inline;
-        
+        display: none; 
+    }
+
+    .equipo3 {
+        display: block; 
+    }
+
+    .img-desktop {
+        display: none; 
+    }
+
+    .img-2 {
+        display: none; 
+    }
+
+    .img-3 {
+        display: block; 
+    }
+
+    .trofeos21 {
+        display: block; 
+    }
+
+    .trofeos24 {
+        display: none; 
+    }
+
+}
+
+@media (max-width: 500px) {
+    .pc{
+
+        display: none;
+
+    }
+    .tablet{
+        display: none;
+    }
+    .celu{
+        display: block;
+    }
+    .titulo {
+        background-color: red;
     }
 
     .equipo {
+        display: none; 
+    }
+
+    .equipo2 {
+        display: block; 
+    }
+
+    .equipo3{
         display: none;
     }
 
     .img-desktop {
-        display: none;
+        display: none; 
     }
 
     .img-2 {
-        display: block;
-        max-width: 100%;
-        height: auto;
+        display: block; 
+    }
+
+    .img-3{
+        display: none;
     }
 
     .trofeos19 {
-        display: inline;
+        display: block;     
     }
 
-    .trofeos24 {
+    .trofeos21{
         display: none;
     }
 }
